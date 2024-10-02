@@ -1,6 +1,6 @@
 # 📚 북적북적
 > Made by : dellyu03  
-> 인프런 워밍업 클럽 2기 백엔드 프로젝트 과정
+> 인프런 워밍업 클럽 2기 백엔드 프로젝트 과정 중
 
 <br>
 
@@ -17,14 +17,14 @@
 
 ### 🖥 Language
 
- <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white">
 
 
 
 
 ### 🛠 FrameWork
 
-<img src="https://img.shields.io/badge/Spring boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
+<img src="https://img.shields.io/badge/Spring boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
 
 <br>
 
@@ -32,22 +32,7 @@
 
 <img src = "./img/erd.png">
 
-## 전체 구성
-- 사용자 -> 목표로 선택된 책 -> 도서별 세부 목표 -> 목표마다 달린 댓글 구조로 설계했습니다.
 
-## 사용자 -> 목표로 선택된 책
-- 1:N 관계입니다 한명의 사용자가 여러개의 책을 선택할 수 있기 때문에 이렇게 설계했습니다.
-- 처음에는 웹에 있는 도서 목록을 크롤링해서 DB에 넣은 다음 도서 선택을 하는 식으로 할까 고민했었는데 크롤링할 양도 많고 DB에 없는 책을 목표로 선정하고 싶은 경우가 생길 것 같아서 그냥 사용자가 직접 목표 책에 대해 작성할 수 있도록 설계하기로 했습니다. (추후에 서비스를 좀 더 확장하게 된다면 Yes24나 교보문고 같은 사이트에 연결하며 광고 등을 붙이는 구성을 생각하고 있습니다. 만약 그렇게 된다면 유저가 직접 작성한 책과 연동된 책을 따로 다른 테이블에 두어 작성하는것이 기존 DB를 수정하지 않아도 되서 더 좋을거 같다고 생각합니다.)
 
-## 등록된 책 -> ChosenBook
-- 1:N 관계입니다. 등록된 책을 다른 여러 사람들이 선택해서 사용할 수 있기에 이렇게 작성했습니다.
-- 책을 처음 등록하면 DB에 저장하고 다른 사람들이 같은 책을 목표로 삼을때 사용할 수 있도록 지정하면 DB 부담이 좀 줄어들거 같다고 생각해서 이렇게 설계했습니다.
-
-## 목표로 선택된 책 -> 세부 목표
-- 1:N 관계입니다. 하나의 책의 여러개의 세부 목표를 둘 수 있기에 이렇게 설계했습니다.
-- user에 바로 연결할지 아니면 책과 연동해서 작성해야 할지 고민했는데 사용자별 목표를 보여주는 것보다는 도서별 목표로 보여주는 것이 좀 더 독서 습관 만들기라는 취지에 더 어울릴 것 같아 이렇게 설계했습니다.
-
-## 세부 목표 -> 댓글
-- 1:N 관계입니다. 목표별로 다른 사용자들이 여러 댓글을 달 수 있기에 이렇게 설계하였습니다.
 
 

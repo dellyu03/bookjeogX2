@@ -1,6 +1,6 @@
 # 📚 북적북적
 > Made by : dellyu03  
-> 인프런 워밍업 클럽 2기 백엔드 프로젝트 과정 중
+> [인프런 워밍업 클럽 2기 백엔드 프로젝트 과정](https://www.inflearn.com/course/offline/warmup-club-2-be-bk#program) 미니 프로젝트
 
 <br>
 
